@@ -5,6 +5,7 @@
     <script src="https://npmcdn.com/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/app.css">
+    
 </head>
 <body>
 <div id="app">
@@ -12,7 +13,7 @@
         <div class="small-6 columns">
             <h1 class="text-center">YOU</h1>
             <div class="healthbar">
-                <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;">
+                <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;" v-bind:style="{'width': healthLevel.You}">
 
                 </div>
             </div>
@@ -20,7 +21,7 @@
         <div class="small-6 columns">
             <h1 class="text-center">MONSTER</h1>
             <div class="healthbar">
-                <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;">
+                <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;" v-bind:style="{'width': healthLevel.Monster}">
 
                 </div>
             </div>
@@ -49,5 +50,7 @@
         </div>
     </section>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
